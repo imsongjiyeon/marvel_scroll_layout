@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마블 원페이지 스크롤 레이아웃</title>
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+  <!-- 기본, 공통서식 -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+
+  <!-- 레이아웃서식 -->
+  <link rel="stylesheet" href="./css/layout.css" type="text/css">
+
+  <!-- 컨텐츠 내용 서식 -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+
+  <!-- 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- css3 속성 사용시 접두사 자동으로 붙여주는 스크립트 소스 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 제이쿼리 ui라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <!-- 제이쿼리 쿠키파일 - 오늘 하루열지 않음 위해 사용-->
+  <script src="./script/jquery.cookie.js"></script>
+
+  <!-- 제이쿼리 공통 스크립트 -->
+  <script src="./script/layout.js"></script>
+
+  <!-- 컨텐츠 스크립트 -->
+  <script src="./script/main.js"></script>
+  
+</head>
+<body>
+  <!-- 헤더영역 시작 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/logo_red.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- 상단 내비게이션 -->
+    <nav>
+      <ul class="gnb">
+        <li><a href="#latest" title="Latest">Latest</a></li>
+        <li><a href="#news" title="News">News</a></li>
+        <li><a href="#movies" title="Movies">Movies</a></li>
+        <li><a href="#event" title="Event">Event</a></li>
+        <li><a href="#cs" title="CS">CS</a></li>
+      </ul>
+    </nav>
+
+    <i class="fas fa-user"></i> <!-- 로그인 아이콘-->
+    <i class="fas fa-bell"></i> <!-- 알람 아이콘 -->
+  </header>
+
+  <!-- 원형내비게이션 -->
+  <!-- <nav id="m_nav">
+    <ul>
+      <li><span>1</span><a href="#" title="소개">소개</a></li>
+      <li><span>2</span><a href="#" title="체험">체험</a></li>
+      <li><span>3</span><a href="#" title="이벤트">이벤트</a></li>
+      <li><span>4</span><a href="#" title="구매">구매</a></li>
+      <li><span>5</span><a href="#" title="고객지원">고객지원</a></li>
+    </ul>
+  </nav> -->
+
+  <!-- 메인영역 시작 -->
+  <main>
+    <section id="main_intro">
+      <h2>마블 인트로 영상 콘텐츠</h2>
+      <!-- <article>
+        <h3>CASPER</h3>
+        <p>오직 캐스퍼 온라인에서만 구매하실 수 있습니다.</p>
+        <a href="#" title="나만의 캐스퍼 만들기">나만의 캐스퍼 만들기</a>
+        <a href="#" title="구매 해택보기">구매 해택보기</a>
+        <a href="#" title="자세히 보기">자세히 보기</a>
+      </article> -->
+      <video autoplay muted loop="infinite" id="main_video">
+        <source src="./images/1686685609-marvel.mp4" type="video/mp4">
+      </video>
+      <div class="poster">
+        <img src="./images/scale.jpeg" alt="메인포스터이미지">
+      </div>
+      <a href="#" title="아래로 이동">
+        <img src="./images/mjolnir.png" alt="묠니르이미지" class="next_img">
+      </a>
+      <a href="#" title="아래로 이동" class="next_btn">아래로 이동</a>
+    </section>
+
+    <section id="comming">
+      <div id="comming_inner">
+        <img src="./images/thunder1.png" alt="번개모양장식이미지1" class="h2_before">
+        <h2>Comming Soon</h2>
+        <img src="./images/thunder2.png" alt="번개모양장식이미지2" class="h2_after">
+        <img src="./images/themarvels_lob_log_def_02.png" alt="themarvels배경이미지">
+        <iframe  src="https://www.youtube.com/embed/xC-ITzh98Vo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <!-- <iframe  src="https://www.youtube.com/embed/s0K3ajzYOp0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    </div>
+    </section>
+
+    <section id="latest">
+      <h2>Latest Movies</h2>
+      <article class="slide">
+        <ul class="slide_wrap">
+          <li><a href="#" title="가디언즈오브갤럭시영화소개페이지이동">
+            <iframe src="https://www.youtube.com/embed/XyHr-s3MfCQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Marvel Studios’ Guardians of the Galaxy Vol. 3</p>
+            <!-- <p>[가디언즈 오브 갤럭시: Volume 3]</p> -->
+          </a></li>
+          <li><a href="#" title="앤트맨과와스프:퀀텀매니아영화소개페이지이동">
+            <iframe src="https://www.youtube.com/embed/33Ljhqgdtsc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Marvel Studios’ Ant-Man and The Wasp: Quantumania</p>
+            <!-- <p>[앤트맨과 와스프: 퀀텀매니아]</p> -->
+          </a></li>
+          <li><a href="#" title="블랙팬서:와칸다포에버영화소개페이지이동">
+            <iframe src="https://www.youtube.com/embed/eeIMITpJW4s" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Marvel Studios’ Black Panther: Wakanda Forever</p>
+            <!-- <p>[블랙 팬서: 와칸다 포에버]</p> -->
+          </a></li>
+          <li><a href="#" title="토르:러브앤썬더영화소개페이지이동">
+            <iframe src="https://www.youtube.com/embed/h3rKe6DdC18" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Marvel Studios' Thor: Love and Thunder</p>
+            <!-- <p>[토르: 러브 앤 썬더]</p> -->
+          </a></li>
+          <li><a href="#" title="닥터 스트레인지: 대혼돈의 멀티버스영화소개페이지이동">
+            <img src="./images/ds_bg.jpg" alt="닥터 스트레인지 : 대혼돈의멀티버스 포스터이미지">
+            <iframe src="https://www.youtube.com/embed/dKy5B-PSYZo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <!-- <iframe src="https://www.youtube.com/embed/mI9oyFMUlfg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+            <p>Marvel Studios' Doctor Strange in the Multiverse of Madness</p>
+            <!-- <p>[닥터 스트레인지: 대혼돈의 멀티버스]</p> -->
+          </a></li>
+        </ul>
+      </article>
+      <i class="fas fa-angle-left"></i>
+      <i class="fas fa-angle-right"></i>
+    </section>
+
+    <section id="news">
+      <h2>Movie News</h2>
+      <div class="news_inner">
+        <ul class="list_news">
+          <li>
+            <div class="news_date">
+              <span>Today</span>
+              <span>16</span>
+              <span>2023.08</span>
+            </div>
+            <a href="#" title="무비뉴스 페이지이동">
+              <img src="./images/news_01.png" alt="무비뉴스 썸네일이미지">
+            </a>
+            <dl><a href="#" title="무비뉴스 페이지이동">
+              <p>MOVIES</p>
+              <dt>'Guardians of the Galaxy Vol. 3' Now Streaming on Disney+</dt>
+              <dd>Get ready for one last ride.</dd>
+              <dd>
+                <p>
+                  <i class="fa-solid fa-heart"><span> 100</span></i>
+                  <i class="fa-solid fa-eye"><span> 674</span></i>
+                </p>
+              </dd>
+            </a></dl>
+          </li>
+          <li>
+            <div class="news_date">
+              <span>04</span>
+              <span>2023.08</span>
+            </div>
+            <a href="#" title="무비뉴스 페이지이동">
+              <img src="./images/news_02.png" alt="무비뉴스 썸네일이미지">
+            </a>
+            <dl><a href="#" title="무비뉴스 페이지이동">
+              <p>CULTURE & LIFESTYLE</p>
+              <dt>SDCC 2023: Cosmo the Spacedog Lands on the Marvel Stage</dt>
+              <dd>‘Guardians of the Galaxy Vol. 3’ is now available on Digital, and arrives on Blu-ray August 1.</dd>
+              <dd>
+                <p>
+                  <i class="fa-solid fa-heart"><span> 385</span></i>
+                  <i class="fa-solid fa-eye"><span> 2650</span></i>
+                </p>
+              </dd>
+            </a></dl>
+          </li>
+          <li>
+            <div class="news_date">
+              <span>03</span>
+              <span>2023.08</span>
+            </div>
+            <a href="#" title="무비뉴스 페이지이동">
+              <img src="./images/news_03.jpg" alt="무비뉴스 썸네일이미지">
+            </a>
+            <dl><a href="#" title="무비뉴스 페이지이동">
+              <p>MOVIES</p>
+              <dt>SDCC 2023: Concept Art for Marvel Studios' 'The Marvels' Revealed</dt>
+              <dd>Andy Park gives behind the scenes insights and unveils his concept art poster for the movie coming November 10th!</dd>
+              <dd>
+                <p>
+                  <i class="fa-solid fa-heart"><span> 478</span></i>
+                  <i class="fa-solid fa-eye"><span> 3243</span></i>
+                </p>
+              </dd>
+            </a></dl>
+          </li>
+          <li>
+            <div class="news_date">
+              <span>02</span>
+              <span>2023.08</span>
+            </div>
+            <a href="#" title="무비뉴스 페이지이동">
+              <img src="./images/news_04.jpg" alt="무비뉴스 썸네일이미지">
+            </a>
+            <dl><a href="#" title="무비뉴스 페이지이동">
+              <p>CULTURE & LIFESTYLE</p>
+              <dt>SDCC 2023: Day 4 Recap</dt>
+              <dd>Exciting announcements at the Women of Marvel panel including 'Spider-Gwen: On Tour', 'Star Wars: Obi-Wan Kenobi' and more, a first glimpse at concept art from Marvel Studios' 'The Marvels', and an inside look at Artists' Alley!</dd>
+              <dd>
+                <p>
+                  <i class="fa-solid fa-heart"><span> 532</span></i>
+                  <i class="fa-solid fa-eye"><span> 2230</span></i>
+                </p>
+              </dd>
+            </a></dl>
+          </li>
+          <li>
+            <div class="news_date">
+              <span>01</span>
+              <span>2023.08</span>
+            </div>
+            <a href="#" title="무비뉴스 페이지이동">
+              <img src="./images/news_05.jpg" alt="무비뉴스 썸네일이미지">
+            </a>
+            <dl><a href="#" title="무비뉴스 페이지이동">
+              <p>MOVIES</p>
+              <dt>'The Marvels' Official Trailer: Carol Danvers, Monica Rambeau, and Kamala Khan Take Flight</dt>
+              <dd>'The Marvels' Official Trailer: Carol Danvers, Monica Rambeau, and Kamala Khan Take Flight</dd>
+              <dd>
+                <p>
+                  <i class="fa-solid fa-heart"><span> 760</span></i>
+                  <i class="fa-solid fa-eye"><span> 2709</span></i>
+                </p>
+              </dd>
+            </a></dl>
+          </li>
+        </ul>
+        <div class="more">
+          <a href="#" title="무비뉴스 페이지이동">
+            <img src="./images/more.png" alt="무비뉴스 더보기" id="btn_more">
+          </a>
+          <!-- <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="movies">
+      <h2>Marvel Movies</h2>
+      <div class="movies_inner">
+        <nav class="g_nav">
+          <ul>
+            <li><a href="#" title="전체보기" class="act_btn">ALL</a></li>
+            <li><a href="#" title="Avengers">Avengers</a></li>
+            <li><a href="#" title="Iron Man">Iron&nbsp;Man</a></li>
+            <li><a href="#" title="Captain America">Captain&nbsp;America</a></li>
+            <li><a href="#" title="Thor">Thor</a></li>
+            <li><a href="#" title="Hulk">Hulk</a></li>
+            <li><a href="#" title="Guardians of the Galaxy">Guardians&nbsp;of&nbsp;the&nbsp;Galaxy</a></li>
+            <li><a href="#" title="Doctor Strange">Doctor&nbsp;Strange</a></li>
+            <li><a href="#" title="Spider-Man">Spider-Man</a></li>
+            <li><a href="#" title="Black Panther">Black&nbsp;Panther</a></li>
+            <li><a href="#" title="Ant-Man">Ant-Man</a></li>
+            <li><a href="#" title="Captain Marvel">Captain&nbsp;Marvel</a></li>
+            <li><a href="#" title="Black Widow">Black&nbsp;Widow</a></li>
+            <li><a href="#" title="Shang-Chi">Shang-Chi</a></li>
+          </ul>
+        </nav>
+        <!--
+          Avengers : 
+          Iron Man : 
+          Captain America : 
+          Thor : 
+          Hulk : 
+          Guardians of the Galaxy : 
+          Doctor Strange : 
+          Spider-Man :
+          Black Panther :
+          Ant-Man :
+          Captain Marvel : 
+          Black Widow : 
+          Shang-Chi : 
+        -->
+        <ul class="g_list">
+          <li class="total captain_marvel">
+            <a href="./images/themarvels_lob_crd_04.jpg" title="Captain Marvel">
+              <img src="./images/themarvels_lob_crd_04.jpg" alt="Captain Marvel">
+              <span class="caption"><span class="caption_text">The Marvels<br>2023</span></span>
+            </a>
+          </li>
+
+          <li class="total guardians_of_the_galaxy">
+            <a href="./images/guardiansofthegalaxyvolume3_lob_crd_03.jpg" title="Guardians of the Galaxy">
+              <img src="./images/guardiansofthegalaxyvolume3_lob_crd_03.jpg" alt="Guardians of the Galaxy">
+              <span class="caption"><span class="caption_text">Guardians of the Galaxy Vol. 3<br>2023</span></span>
+            </a>
+          </li>
+
+          <li class="total ant_man">
+            <a href="./images/antmanandthewaspquantumania_lob_crd_03.jpg" title="Ant-Man">
+              <img src="./images/antmanandthewaspquantumania_lob_crd_03.jpg" alt="Ant-Man">
+              <span class="caption"><span class="caption_text">Ant-Man and The Wasp: Quantumania<br>2023</span></span>
+            </a>
+          </li>
+
+          <li class="total black_panther">
+            <a href="./images/blackpantherwakandaforever_lob_crd_06.jpg" title="Black Panther">
+              <img src="./images/blackpantherwakandaforever_lob_crd_06.jpg" alt="Black Panther">
+              <span class="caption"><span class="caption_text">Black Panther: Wakanda Forever<br>2022</span></span>
+            </a>
+          </li>
+
+          <li class="total thor">
+            <a href="./images/thorloveandthunder_lob_crd_04.jpg" title="Thor">
+              <img src="./images/thorloveandthunder_lob_crd_04.jpg" alt="Thor">
+              <span class="caption"><span class="caption_text">Thor: Love and Thunder<br>2022</span></span>
+            </a>
+          </li>
+
+          <li class="total doctor_strange">
+            <a href="./images/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg" title="Doctor Strange">
+              <img src="./images/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg" alt="Doctor Strange">
+              <span class="caption"><span class="caption_text">Doctor Strange in the Multiverse of Madness<br>2022</span></span>
+            </a>
+          </li>
+
+          <li class="total spider_man">
+            <a href="./images/spider-mannowayhome_lob_crd_03.jpg" title="Spider-Man">
+              <img src="./images/spider-mannowayhome_lob_crd_03.jpg" alt="Spider-Man">
+              <span class="caption"><span class="caption_text">Spider-Man: No Way Home<br>2021</span></span>
+            </a>
+          </li>
+
+          <li class="total avengers">
+            <a href="./images/eternals_lob_crd_06.jpg" title="Avengers">
+              <img src="./images/eternals_lob_crd_06.jpg" alt="Avengers">
+              <span class="caption"><span class="caption_text">Eternals<br>2021</span></span>
+            </a>
+          </li>
+
+          <li class="total shang_chi">
+            <a href="./images/shangchi_lob_crd_07.jpg" title="Shang-Chi">
+              <img src="./images/shangchi_lob_crd_07.jpg" alt="Shang-Chi">
+              <span class="caption"><span class="caption_text">Shang-Chi and The Legend of The Ten Rings<br>2021</span></span>
+            </a>
+          </li>
+
+          <li class="total black_widow">
+            <a href="./images/blackwidow_lob_crd_06.jpg" title="Black Widow">
+              <img src="./images/blackwidow_lob_crd_06.jpg" alt="Black Widow">
+              <span class="caption"><span class="caption_text">Black Widow<br>2021</span></span>
+            </a>
+          </li>
+
+          <li class="total spider_man">
+            <a href="./images/spider-manfarfromhome_lob_crd_04_3.jpg" title="Spider-Man">
+              <img src="./images/spider-manfarfromhome_lob_crd_04_3.jpg" alt="Spider-Man">
+              <span class="caption"><span class="caption_text">Spider-Man: Far From Home<br>2019</span></span>
+            </a>
+          </li>
+
+          <li class="total avengers">
+            <a href="./images/avengersendgame_lob_crd_05_2.jpg" title="Avengers">
+              <img src="./images/avengersendgame_lob_crd_05_2.jpg" alt="Avengers">
+              <span class="caption"><span class="caption_text">Avengers: Endgame<br>2019</span></span>
+            </a>
+          </li>
+
+          <li class="total captain_marvel">
+            <a href="./images/captainmarvel_lob_crd_06.jpg" title="Captain Marvel">
+              <img src="./images/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
+              <span class="caption"><span class="caption_text">Captain Marvel<br>2019</span></span>
+            </a>
+          </li>
+
+          <li class="total ant_man">
+            <a href="./images/ant-manthewasp_lob_crd_01.jpg" title="Ant-Man">
+              <img src="./images/ant-manthewasp_lob_crd_01.jpg" alt="Ant-Man">
+              <span class="caption"><span class="caption_text">Ant-Man and The Wasp<br>2018</span></span>
+            </a>
+          </li>
+
+          <li class="total avengers">
+            <a href="./images/avengersinfinitywar_lob_crd_02_1.jpg" title="Avengers">
+              <img src="./images/avengersinfinitywar_lob_crd_02_1.jpg" alt="Avengers">
+              <span class="caption"><span class="caption_text">Avengers: Infinity War<br>2018</span></span>
+            </a>
+          </li>
+
+          <li class="total black_panther">
+            <a href="./images/blackpanther_lob_crd_01_4.jpg" title="Black Panther">
+              <img src="./images/blackpanther_lob_crd_01_4.jpg" alt="Black Panther">
+              <span class="caption"><span class="caption_text">Black Panther<br>2018</span></span>
+            </a>
+          </li>
+
+          <li class="total thor">
+            <a href="./images/thorragnarok_lob_crd_03.jpg" title="Thor">
+              <img src="./images/thorragnarok_lob_crd_03.jpg" alt="Thor">
+              <span class="caption"><span class="caption_text">Thor: Ragnarok<br>2017</span></span>
+            </a>
+          </li>
+
+          <li class="total spider_man">
+            <a href="./images/spider-manhomecoming_lob_crd_02.jpg" title="Spider-Man">
+              <img src="./images/spider-manhomecoming_lob_crd_02.jpg" alt="Spider-Man">
+              <span class="caption"><span class="caption_text">Spider-Man: Homecoming<br>2017</span></span>
+            </a>
+          </li>
+
+          <li class="total guardians_of_the_galaxy">
+            <a href="./images/guardiansofthegalaxyvol.2_lob_crd_01.jpg" title="Guardians of the Galaxy">
+              <img src="./images/guardiansofthegalaxyvol.2_lob_crd_01.jpg" alt="Guardians of the Galaxy">
+              <span class="caption"><span class="caption_text">Guardians of the Galaxy Vol. 2<br>2017</span></span>
+            </a>
+          </li>
+
+          <li class="total doctor_strange">
+            <a href="./images/doctorstrange_lob_crd_01_6.jpg" title="Doctor Strange">
+              <img src="./images/doctorstrange_lob_crd_01_6.jpg" alt="Doctor Strange">
+              <span class="caption"><span class="caption_text">Doctor Strange<br>2016</span></span>
+            </a>
+          </li>
+
+          <li class="total captain_america">
+            <a href="./images/captainamericacivilwar_lob_crd_01_9.jpg" title="Captain America">
+              <img src="./images/captainamericacivilwar_lob_crd_01_9.jpg" alt="Captain America">
+              <span class="caption"><span class="caption_text">Captain America: Civil War<br>2016</span></span>
+            </a>
+          </li>
+
+          <li class="total ant_man">
+            <a href="./images/ant-man_lob_crd_01_8.jpg" title="Ant-Man">
+              <img src="./images/ant-man_lob_crd_01_8.jpg" alt="Ant-Man">
+              <span class="caption"><span class="caption_text">Ant-Man<br>2015</span></span>
+            </a>
+          </li>
+
+          <li class="total avengers">
+            <a href="./images/avengersageofultron_lob_crd_03.jpg" title="Avengers">
+              <img src="./images/avengersageofultron_lob_crd_03.jpg" alt="Avengers">
+              <span class="caption"><span class="caption_text">Avengers: Age of Ultron<br>2015</span></span>
+            </a>
+          </li>
+
+          <li class="total guardians_of_the_galaxy">
+            <a href="./images/guardiansofthegalaxy_lob_crd_03.jpg" title="Guardians of the Galaxy">
+              <img src="./images/guardiansofthegalaxy_lob_crd_03.jpg" alt="Guardians of the Galaxy">
+              <span class="caption"><span class="caption_text">Guardians of the Galaxy<br>2014</span></span>
+            </a>
+          </li>
+
+          <li class="total captain_america">
+            <a href="./images/captainamericathewintersoldier_lob_crd_01_1.jpg" title="Captain America">
+              <img src="./images/captainamericathewintersoldier_lob_crd_01_1.jpg" alt="Captain America">
+              <span class="caption"><span class="caption_text">Captain America: The Winter Soldier<br>2014</span></span>
+            </a>
+          </li>
+
+          <li class="total thor">
+            <a href="./images/thorthedarkworld_lob_crd_02_1.jpg" title="Thor">
+              <img src="./images/thorthedarkworld_lob_crd_02_1.jpg" alt="Thor">
+              <span class="caption"><span class="caption_text">Thor: The Dark World<br>2013</span></span>
+            </a>
+          </li>
+
+          <li class="total iron_Man">
+            <a href="./images/ironman3_lob_crd_01_10.jpg" title="Iron Man">
+              <img src="./images/ironman3_lob_crd_01_10.jpg" alt="Iron Man">
+              <span class="caption"><span class="caption_text">Iron Man 3<br>2013</span></span>
+            </a>
+          </li>
+
+          <li class="total avengers">
+            <a href="./images/theavengers_lob_crd_03.jpg" title="Avengers">
+              <img src="./images/theavengers_lob_crd_03.jpg" alt="Avengers">
+              <span class="caption"><span class="caption_text">The Avengers<br>2012</span></span>
+            </a>
+          </li>
+
+          <li class="total captain_america">
+            <a href="./images/captainamerica_lob_crd_01.jpg" title="Captain America">
+              <img src="./images/captainamerica_lob_crd_01.jpg" alt="Captain America">
+              <span class="caption"><span class="caption_text">Captain America: The First Avenger<br>2011</span></span>
+            </a>
+          </li>
+
+          <li class="total thor">
+            <a href="./images/thor_lob_crd_01.jpg" title="Thor">
+              <img src="./images/thor_lob_crd_01.jpg" alt="Thor">
+              <span class="caption"><span class="caption_text">Thor<br>2011</span></span>
+            </a>
+          </li>
+
+          <li class="total iron_Man">
+            <a href="./images/ironman2_lob_crd_01_3.jpg" title="Iron Man">
+              <img src="./images/ironman2_lob_crd_01_3.jpg" alt="Iron Man">
+              <span class="caption"><span class="caption_text">Iron Man 2<br>2010</span></span>
+            </a>
+          </li>
+
+          <li class="total hulk">
+            <a href="./images/theincrediblehulk_lob_crd_03.jpg" title="Hulk">
+              <img src="./images/theincrediblehulk_lob_crd_03.jpg" alt="Hulk">
+              <span class="caption"><span class="caption_text">The Incredible Hulk<br>2008</span></span>
+            </a>
+          </li>
+
+          <li class="total iron_Man">
+            <a href="./images/ironman_lob_crd_01_3.jpg" title="Iron Man">
+              <img src="./images/ironman_lob_crd_01_3.jpg" alt="Iron Man">
+              <span class="caption"><span class="caption_text">Iron Man<br>2008</span></span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="event">
+      <h2>Event</h2>
+      <a href="#" title="이벤트 페이지이동">
+        <img src="./images/banner01.jpg" alt="배너" id="banner">
+      </a>
+      <div class="ad_insider">
+        <a href="#" title="이벤트 페이지이동">
+          <img src="./images/ad_insider.jpg" alt="insider광고배너" id="ad_banner">
+          <div class="ad_content">
+            <p>Marvel Insider</p>
+            <p>시청하고, 적립하고, 사용하세요!</p>
+            <p>팬으로서 하고 있는 일을 보상 받으세요.</p>
+            <p>JOIN</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="cs">
+      <div id="cs_inner">
+        <img src="./images/thunder1.png" alt="번개모양장식이미지1" class="h2_before">
+        <h2>Marvel 고객지원에 오신 것을 환영합니다!</h2>
+        <img src="./images/thunder2.png" alt="번개모양장식이미지1" class="h2_after">
+
+        <div class="faq_wrap">
+          <ul class="faq">
+            <li><a href="#" title="faq1">Marvel Unlimited 멤버십을 어떻게 업그레이드합니까?
+            </a>
+              <ul class="asw">
+                <li>
+                  <p>
+                    Marvel.com 을 통해 멤버십을 구매한 기존 Marvel Unlimited
+                  회원은 현재 멤버십을 Marvel Unlimited Annual 또는 Marvel
+                  Unlimited Annual Plus 멤버십으로 업그레이드할 수 있습니다.
+                  </p>
+                  <p>
+                    멤버십을 업그레이드하려면 Marvel 무제한 멤버십 관리 페이 지를 방문하여 "멤버십 업그레이드"를 선택한 다음 페이지의 지침을 따르십시오.
+                  </p>
+                  <p>
+                    업그레이드된 계획은 기존 계획의 다음 예정된 갱신 날짜에 시작됩니다. 즉시 업그레이드하려면 help.marvel.com에서 Marvel 고객 지원에 문의하십시오.
+                  </p>
+                  </li>
+              </ul>
+            </li>
+            <li><a href="#" title="faq2">구독하기 전에 Marvel Unlimited를 미리 볼 수 있나요?
+            </a>
+              <ul class="asw">
+                <li>
+                  <p>
+                    전적으로! 7일 무료 평가판을 시작하고 30,000개 이상의 디지 털 만화에 액세스하십시오. 여기에서 Marvel Unlimited를 무 료로 사용해 보세요.
+                  </p>
+                  </li>
+              </ul>
+            </li>
+            <li><a href="#" title="faq3">Marvel Unlimited에서 구매/사용한 디지털 만화에 대해 자세히 알아보기</a>
+              <ul class="asw">
+                <li>
+                  <p>
+                    Marvel Comics 앱(Comixology에서 운영)은 2023년 6월 2일에 종료되지만 해당 앱에서 디지털 만화를 구매한 고객은 Marvel Comics 계정을 Marvel에 연결하면 Marvel Unlimited 앱에서 해당 디지털 만화에 계속 액세스할 수 있습니다. 2023 년 6월 2일까지 계정에 가입하세요. 구매 및/또는 교환한 만 화의 기존 라이브러리를 Marvel Unlimited 앱으로 계속 마 이그레이션하고 있습니다.
+                  </p>
+                  <p>
+                    또한 Marvel 계정이 Comixology 계정과 동기화된 경우 동기 화된 Comixology/ Amazon에서 구매한 Marvel 디지털 만화는 2023년 6월 9일까지 Marvel Unlimited의 구매 라이브러리에 서 사용할 수 있습니다. 2023년 6월 2일 이후에 이루어진 모 든 Comixology/Amazon 구매는 Marvel Unlimited와 동기화 되지 않습니다. Comixology/Amazon을 통해 구매한 Marvel 디지털 만화는 Amazon을 통해서도 계속 사용할 수 있습니다.
+                  </p>
+                  <p>
+                    또한 Marvel 프리뷰와 같은 무료 프로모션 만화는 더 이상 Marvel Unlimited 앱의 라이브러리에 포함되지 않습니다.
+                  </p>
+                  <p>
+                    Marvel.com/redeem을 통한 모든 Marvel 디지털 코믹 사용권 은 My Library 탭의 Marvel Unlimited 앱에 표시됩니다. 교환 한 디지털 만화 옆에는 구입한 레이블이 표시되며 라이브러리 내에서 구입한 만화별로 필터링할 수도 있습니다.
+                  </p>
+                  <p>
+                    구매 및/또는 교환한 만화 라이브러리를 보기 위해 Marvel Unlimited 구독을 구매할 필요가 없습니다.
+                  </p>
+                  <p>
+                    Marvel Unlimited에 서 디지털 만화 구매/교환을 보려면 Marvel Unlimited 앱 버전 7.42 이상을 다운로드해야 합니다. 다운로드가 완료되면 여기에서 앱에 로그인할 수 있습니다.
+                  </p>
+                  </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" title="문의하기페이지이동" class="qna">답을 찾을 수 없나요?&nbsp;<span>문의하기 &gt;</span></a>
+        
+
+        <ul class="cs_list">
+          <li><a href="#" title="Marvel Unlimited"><img src="./images/cs_ad01.png" alt="Marvel Unlimited"></a></li>
+          <li><a href="#" title="Marvel Insider"><img src="./images/cs_ad02.png" alt="Marvel Insider"></a></li>
+          <li><a href="#" title="My Marvel Account"><img src="./images/cs_ad03.png" alt="My Marvel Account"></a></li>
+          <li><a href="#" title="Digital Comics Redeem Codes"><img src="./images/cs_ad04.png" alt="Digital Comics Redeem Codes"></a></li>
+          <li><a href="#" title="Print Subscriptions"><img src="./images/cs_ad05.png" alt="Print Subscriptions"></a></li>
+          <li><a href="#" title="Something Else"><img src="./images/cs_ad06.png" alt="Something Else"></a></li>
+        </ul>
+
+        
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2>
+        <a href="index.html" title="하단로고">
+          <img src="./images/logo_red.png" alt="하단로고">
+        </a>
+      </h2>
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="#" title="Terms of Use">Terms of Use</a></li>
+          <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+          <li><a href="#" title="Interest-Based Ads">Interest-Based Ads</a></li>
+          <li><a href="#" title="License Agreement">License Agreement</a></li>
+          <li><a href="#" title="copyright MARVEL">&copy;2023 MARVEL</a></li>
+        </ul>
+      </nav>
+      <address>
+        <dl>
+          <dt><a href="#" title="MARVEL INSIDER"><img src="./images/marvel_insider-logo-large2x.png" alt="MARVEL INSIDER"></a></dt>
+          <dd><a href="#" title="MARVEL INSIDER">MARVEL INSIDER</a></dd>
+          <dt><a href="#" title="MARVEL UNLIMITED"><img src="./images/mu-logo-2x.png" alt="MARVEL UNLIMITED"></a></dt>
+          <dd><a href="#" title="MARVEL UNLIMITED">MARVEL UNLIMITED</a></dd>
+        </dl>
+      </address>
+      <div class="sns">
+        <ul>
+          <li><a target="_blank" href="http://facebook.com/marvel" title="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a target="_blank" href="http://twitter.com/marvel" title="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a target="_blank" href="http://instagram.com/marvel" title="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a target="_blank" href="http://marvelentertainment.tumblr.com" title="tumblr"><i class="fa-brands fa-tumblr"></i></a></li>
+        </ul>
+        <ul>
+          <li><a target="_blank" href="http://youtube.com/marvel" title="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a target="_blank" href="https://www.snapchat.com/add/marvelhq" title="snapchat"><i class="fa-brands fa-snapchat"></i></a></li>
+          <li><a target="_blank" href="https://www.pinterest.com/marvelofficial" title="pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 스와이퍼 슬라이드 스크립트 -->
+  <script src="./script/swiper.js"></script>
+</body>
+</html>

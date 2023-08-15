@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* 레이아웃 서식 header, main, footer 공통 서식 */
+
+/* html{
+  scroll-behavior: smooth;
+} */
+
+/* modal banner */
+.modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;top: 0px;
+  background: rgba(0, 0, 0, .7);
+  z-index: 2000;
+}
+.inner{
+  width: 450px; height: 730px;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner img{
+  display: block;
+}
+.inner p{
+  background: #fff;
+  line-height: 40px;
+  font-size: 12px;
+  padding: 0px 5px;
+}
+.inner #ch{
+  
+}
+.inner #c_btn{
+  /* border: 1px solid #000; */
+  border: none;
+  padding: 4px 8px;
+  background: #fff;
+  position: absolute;
+  right: 10px; bottom: 7px;
+}
+
+/* 헤더서식 */
+header{
+  width: 100%; height: 70px;
+  position: fixed; top: 0px; left: 0px;
+  z-index: 1000;
+}
+header:hover{
+  background: rgba(255, 255, 255, 0.8);
+}
+/* 세로 스크롤 값이 1100px 이상일 경우 header 배경색 적용 */
+.act{
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+header > h1{
+  padding: 15px 25px 2%;
+}
+header > h1 img{
+  width: 115px;
+}
+header i.fas{
+  position: absolute;
+  top: 24px;
+  font-size: 1.6rem;
+  color: var(--t-color02);
+}
+header i.fa-user{right:4%;}
+header i.fa-bell{right:2%;}
+header nav{
+  width: 600px;
+  /* margin: -58px auto 0px auto; */
+  position: absolute;
+  top: 25px;
+  left: 50%; transform: translateX(-50%);
+}
+header .gnb{
+  display: flex;
+  justify-content: space-around;
+}
+header .gnb > li >a{
+  font-size: 1.2rem;
+  color: var(--t-color02);
+  font-weight: 500;
+}
+
+main{
+  background: linear-gradient(to bottom, #01010B 1500px, #fff 500px );
+}
+/* 메인 내비게이션 서식 */
+#m_nav{}
+
+
+/* 푸터서식 */
+footer{
+  background: #1c1a1b;
+  width: 100%;
+  padding: 40px 0px;
+  /* display: inline-block; */
+  height: 100px;
+  /* position: absolute; */
+}
+/* footer::after{ 부모한테 float 속성을 해지
+  display: block;
+  content: "";
+  clear: both;
+} */
+.f_inner{
+  width: 1200px;
+  margin: 0px auto;
+  position: relative;
+}
+footer h2{
+  float: left;
+  padding-top: 10px;
+  width: 150px; height: 60px;
+}
+.f_lnb, address{
+  width: 1000px; float: left;
+}
+.f_lnb ul{
+  display: flex;
+  padding-top: 15px;
+
+}
+.f_lnb ul a{
+  color: #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0px 20px;
+}
+.f_lnb ul li:nth-child(2) a{
+  color: var(--t-color02);
+}
+.f_lnb ul li:last-child a{border: none;}
+
+footer address{
+  padding-top: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  color: #ccc;
+}
+footer address dl img{
+  width: 55px;
+  padding-right: 10px;
+}
+footer address dt{display: inline-block;}
+footer address dd{
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 30px;
+}
+footer address dd a{
+  color: #ccc;
+}
+footer .sns{
+
+}
+footer .sns{
+  position: absolute;
+  right: 0px;
+}
+footer .sns ul{
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+footer .sns li i.fa-brands{
+  font-size: 1.5rem;
+}
+footer .sns li{
+  padding-right: 15px;
+}
